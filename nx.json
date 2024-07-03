@@ -14,7 +14,7 @@
     ],
     "sharedGlobals": []
   },
-  "nxCloudAccessToken": "YTFmNmMwMDktYWIxMC00MzE2LWJhYTEtYzE3MTY3OTg0NTAyfHJlYWQtd3JpdGU=",
+  "nxCloudAccessToken": "NDg0ZGVlZTEtNWI3NS00ZDY3LWE4MTctYWRjMzM0OWM0OTgwfHJlYWQtd3JpdGU=",
   "targetDefaults": {
     "@nx/js:tsc": {
       "cache": true,
@@ -22,23 +22,9 @@
       "inputs": ["production", "^production"]
     }
   },
-  "release": {
-    "version": {
-      "preVersionCommand": "npx nx run-many -t build"
-    }
-  },
+  "release": { "version": { "preVersionCommand": "npx nx run-many -t build" } },
   "plugins": [
-    {
-      "plugin": "@nx/eslint/plugin",
-      "options": {
-        "targetName": "lint"
-      }
-    },
-    {
-      "plugin": "@nx/jest/plugin",
-      "options": {
-        "targetName": "test"
-      }
-    }
+    { "plugin": "@nx/eslint/plugin", "options": { "targetName": "lint" } },
+    { "plugin": "@nx/jest/plugin", "options": { "targetName": "test" } }
   ]
 }
